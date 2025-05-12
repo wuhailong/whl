@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1></h1>
+    <script>
+        
+        let nowTime=new Data();
+        let willTime=new Data('2024-05-01 00:00:00');
+        // 时间日期转毫秒数
+        let day=willTime.getTime()-nowTime.getTime();
+        day=parseInt(day/1000/60/60/24);
+        document.querySelector('h1').innerHTML=`今天距离五一放假还有${day}`
+    </script>
+</body>
+</html>
